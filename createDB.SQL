@@ -1,0 +1,9 @@
+CREATE TABLE meteranInfo (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    reading_value INT NOT NULL, 
+    created_at VARCHAR(30) NOT NULL,  
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    prediction_score INT NOT NULL,
+    status VARCHAR(30) NOT NULL,
+    image BLOB NOT NULL
+)
